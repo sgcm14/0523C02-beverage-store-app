@@ -5,8 +5,9 @@ const Home = () => {
   const [beers, setBeers] = useState([])
 
   const getBeers = async()=>{
-    const res = await fetch("https://api.punkapi.com/v2/beers")
+    const res = await fetch("https://api.sampleapis.com/beers/ale")
     const data = await res.json()
+    console.log(data)
     setBeers(data)
   }
 
