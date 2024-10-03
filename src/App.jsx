@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path={routes.home} element={<Home />} />
       <Route path={routes.contact} element={<Contacto />} />
-      <Route path="/beer/:id" element={<Beer />} />
+      <Route path={routes.beer+"/:id"} element={<Beer />} />
       <Route
         path={routes.notFound}
         element={<h1>Error 404 - Page not Found</h1>}

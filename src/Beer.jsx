@@ -22,11 +22,11 @@ const Beer = () => {
     }, [params.id]);
 
     if (!beer) {
-        return <p>Loading...</p>;
+        return <p className='container'>Loading...</p>;
     }
 
     return (
-        <div>
+        <div className='container'>
             <h2>{beer.name}</h2>
             <div className='card'>
                 <img 
